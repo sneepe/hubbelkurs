@@ -90,9 +90,8 @@ nav h2 {
     height: 300px;
   }
   .content-section p {
-    width: 100%;
+    width: 80%;
     height: 50px;
-    text-align: center;
   }
 
  #stackblitz{
@@ -109,4 +108,12 @@ nav h2 {
  .github-pic {
   order: 3;
  }
+
+  #netlify {
+    order: 4;
+  }
+
+  .netlify-pic {
+    order: 5;
+  }
 }
