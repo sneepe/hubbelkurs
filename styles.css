@@ -42,14 +42,14 @@ nav h2 {
   justify-items: center;
   margin-left: auto;
   margin-right: auto;
+  border: 1px solid orange;
 
 }
 
 .content-section img {
-  width: 50%;
+  width: 100%;
   height: 100%;
-  object-fit: cover;
-  flex: 1 0 0;
+  object-fit:fill;
 }
 
 .content-section img:hover {
@@ -57,16 +57,17 @@ nav h2 {
   transition: 0.3s;
   border-radius: 1rem;
   filter: brightness(1.3);
-  flex: 1 0 0;
 }
 
 .content-section p{
-  width: 50%;
   padding: 3rem;
   text-align: center;
   font-size: 1rem;
   font-weight: 500;
   color: white;
+  width: 76%;
+
+
 }
 #stackblitz{
   background-color:rgba(20, 43, 64, 1)
@@ -79,6 +80,14 @@ nav h2 {
 #netlify {
   background-color:rgb(2, 70, 133);
 }
+
+a {
+  display: flex;
+  flex:inline-flex;
+  height: 100%;
+  width: 100%;
+}
+
 
 @media (max-width: 768px) {
   .content-section {
@@ -95,25 +104,25 @@ nav h2 {
   }
 
  #stackblitz{
-  order: 0;
- } 
- .stackblitz.pix{
   order: 1;
- }
-
- #github {
+ } 
+ .stackblitz-pic{
   order: 2;
  }
 
- .github-pic {
+ #github {
   order: 3;
  }
 
+ .github-pic {
+  order: 4
+ }
+
   #netlify {
-    order: 4;
+    order: 5;
   }
 
   .netlify-pic {
-    order: 5;
+    order: 6;
   }
 }
